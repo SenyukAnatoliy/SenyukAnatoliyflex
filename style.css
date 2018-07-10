@@ -1,0 +1,166 @@
+*{margin: 0;padding: 0;}
+@font-face
+{
+	font-family:'Futura PT Book';
+	src: url(fonts/FuturaPT-Book.ttf);
+}@font-face
+{
+	font-family:'Futura PT Light';
+	src: url(fonts/FuturaPT-Light.ttf);
+}
+
+.logo
+{
+	width: 220px;
+	height: 100vh;
+	background: #F7F7F7;
+	float: left;
+
+}
+img
+{
+	width: 25px;
+	margin-top: 100px;
+	margin-left: calc(50% - 13px);
+	cursor: pointer;
+}
+.right
+{
+	position: absolute;
+	width: 220px;
+	height: 100vh;
+	right: 0;
+	top: 0;
+	background: #F7F7F7;
+}
+.container 
+{
+	position: relative;
+	left: 300px;
+	top: 50px;
+	width: 910px;
+	height: 600px;
+	/*background: red;*/
+
+}
+.text
+{
+	/*background: blue;*/
+	width: 550px;
+	height:100%;
+}
+h1
+{
+	position: absolute;
+	font-family: 'Futura PT Book';
+	color: #c6a869;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: normal;
+}
+h2
+{
+	position: absolute;
+	font-family: 'Futura PT Book';
+	color: #222127;
+	font-weight: normal;
+	font-size: 17px;
+	top: 50px;
+}
+span
+{
+	color: #898989;
+}
+p
+{
+	position: absolute;
+	width: 490px;
+	font-family: 'Futura PT Light';
+	color: #898989;
+	/*font-weight: normal;*/
+	font-size: 32px;
+	line-height: 39px;
+	top: 105px;
+	left: 50px;
+}
+p span
+{
+	color: #222127;
+}
+hr
+{
+	position: absolute;
+	size: 0.5px;
+	width: 550px;
+	opacity: 0.2;
+	left: -270px;
+	top: 355px;
+	transform: rotate(90deg);
+}
+.vid
+{
+	position: absolute;
+	width: 255px;
+	height: 505px;
+	bottom: 0;
+	right: 0;
+	/*background: green;*/
+	overflow: hidden;
+	transition: all 0.3s ease;
+}
+
+video
+{
+	position: absolute;
+	bottom: -98px;
+	left: -155px;
+}
+.watch
+{
+	position: absolute;
+	width: 120px;
+	height: 80px;
+	top: 310px;
+	left: 620px;
+	z-index: 2;
+	background: #222127;
+	text-align: center;
+	cursor: pointer;
+}
+.watch p
+{
+	position: absolute;
+	width: 100px;
+	top: 20px;
+	left: 5px;
+	font-family: 'Futura PT Book';
+	font-size: 13px;
+	color: #ffffff;
+	z-index: 3
+}
+.fa
+{
+	position: absolute;
+	color: #c6a869;
+	top: 31px;
+	right: 20px;
+}
+.watch:hover + .vid
+{
+	
+ 	width: 340px;
+ 	transition: all 0.3s ease ;
+}
+.watch:hover + video
+{
+
+}
+p::selection {
+background: #c6a869;
+}
+h2::selection {
+background: #c6a869;
+}
+span::selection {
+background: #c6a869;
+}
